@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Vudiya Lirova — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img class="photo" src="simon Vudiya.jpeg" alt="Simon Vudiya">
+      <div>
+        <h1>Simon Vudiya Lirova</h1>
+        <p class="tagline">Agricultural Scientist & Data Analyst</p>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        <strong>Simon Vudiya Lirova</strong> is an agricultural scientist with a BSc in Horticulture and an MSc in Plant Pathology from the University of Nairobi. He has experience in plant health diagnostics, pest and disease management, agricultural research, and data collection and analysis. He currently serves as a Program Officer at the Kenya National Academy of Sciences (KNAS), contributing to initiatives that promote scientific research, science communication, and evidence-based policymaking. He is also developing skills in GIS mapping, R programming, and digital technologies to advance data-driven agriculture and innovation. His interests include plant virology, agricultural data science, and the application of technology to address agricultural challenges in Kenya and across Africa.
+      </p>
+    </section>
+
+    <section>
+      <h2>NARN Poster</h2>
+      <img src="SimonVudiya NARN Poster.jpg" alt="Simon Vudiya NARN Poster" style="width:100%;max-width:600px;border-radius:8px;border:1px solid #e2e2e2;">
+    </section>
+
+    <section>
+      <h2>Learning Material</h2>
+      <p>Access my important university learning resources and study materials.</p>
+      <a class="cv-btn" href="https://simonvudiya.github.io/Simon-university/" target="_blank" rel="noopener">Visit Simon University</a>
+    </section>
+
+    <section>
+      <h2>Special Professional Skills</h2>
+      <ul>
+        <li>Extraction of DNA from plant samples, Perform PCR, run gel electrophoresis</li>
+        <li>Carrying out field and lab experiments</li>
+        <li>Collecting high quality data</li>
+        <li>Analysis of data in SPSS, STATA and R</li>
+        <li>Extraction and identifying nematodes, isolation of bacteria, identifying insect and scale insects through preparation of permanent slides, DAS and NCM ELISA, Isolation and identification of fungal pathogens. Carrying out surveys</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>MathApp</strong>
+          <span>A math application built with Vercel.</span>
+          <a href="https://mathapp-i6bcri7xd-simon-vudiyas-projects.vercel.app/">View →</a>
+        </li>
+        <li>
+          <strong>Medicinal Plants</strong>
+          <span>A website about medicinal plants built with Vercel.</span>
+          <a href="https://medicinal-plants-two.vercel.app/">View →</a>
+        </li>
+        <li>
+          <strong>Family Tree</strong>
+          <span>A family tree web application hosted on Vercel.</span>
+          <a href="https://familytree-three-ruddy.vercel.app/">View →</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Gigs</h2>
+      <ul>
+        <li>Excel data entry and cleaning for analysis</li>
+        <li>Dashboard creation</li>
+        <li>Data analysis in R</li>
+        <li>Geospatial mapping in QGIS</li>
+        <li>Python programming tutoring</li>
+        <li>SQL introduction</li>
+        <li>R analysis training</li>
+        <li>Proposal writing</li>
+        <li>Website creation</li>
+        <li>Essential information documentation in an app</li>
+      </ul>
+      <p>Kindly reach out.</p>
+    </section>
+
+    <section>
+      <h2>CV</h2>
+      <p>View my full curriculum vitae below to learn more about my background, experience, and qualifications.</p>
+      <button id="cv-open" class="cv-btn" type="button">Read CV in full screen</button>
+      <iframe id="cv-frame" src="simoncv.pdf#toolbar=0&scrollbar=0" style="width:100%;height:400px;border:1px solid #e2e5e2;border-radius:8px;margin-top:12px;"></iframe>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>
+        <a href="tel:+254743961602">+254 743 961 602</a> ·
+        <a href="mailto:simonvudiya95@gmail.com">simonvudiya95@gmail.com</a> ·
+        <a href="https://github.com/Simonvudiya">Simon Vudiya Lirova</a> ·
+        <a href="https://www.linkedin.com/in/simon-vudiya-lirova">LinkedIn</a>
+      </p>
+    </section>
+  </div>
+
+  <div id="cv-modal" class="cv-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.85);z-index:9999;overflow:auto;">
+    <button id="cv-close" class="cv-close" type="button" style="position:fixed;top:20px;right:24px;background:none;border:none;color:#fff;font-size:32px;cursor:pointer;z-index:10000;">&times;</button>
+    <iframe id="cv-modal-frame" src="simoncv.pdf#toolbar=0&scrollbar=0" style="width:100%;min-height:100vh;border:none;"></iframe>
+  </div>
+
+  <script>
+    var openBtn = document.getElementById('cv-open');
+    var closeBtn = document.getElementById('cv-close');
+    var modal = document.getElementById('cv-modal');
+    openBtn.addEventListener('click', function () {
+      modal.style.display = 'block';
+    });
+    closeBtn.addEventListener('click', function () {
+      modal.style.display = 'none';
+    });
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) modal.style.display = 'none';
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') modal.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
